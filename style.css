@@ -1,0 +1,145 @@
+        html{
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background: linear-gradient(40deg, #0F172A, #6D28D9, #1E1E1E);
+            /*background: linear-gradient(0deg, #0052D4, #4364F7, #6FB1FC);*/
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+        }
+        .card-body
+        {
+          justify-items: center;
+          text-align: center;
+        }
+        .hero-section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5rem 2rem;
+          background: linear-gradient(135deg, #1E1E1E	,#0F172A);
+          color: white;
+          border-radius: 10px;
+        }
+        .hero-text {
+          max-width: 50%;
+        }
+        .hero-text h1 { 
+          font-size: 3rem;
+          font-weight: 600;
+        }
+        .hero-text p {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+        .hero-buttons .btn {
+          margin-right: 10px;
+        }
+        .hero-image img {
+          width: 100%;
+          max-width: 350px;
+          border-radius: 10px;
+        }
+        .hero-image-1 img
+        {
+          width: 100%;
+          max-width: 800px;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px; /* Ajuste superior */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px; /* Ajuste del padding */
+          }
+        
+          .navbar-content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        
+          .navbar-brand {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+          }
+        
+          .navbar-nav {
+            display: flex;
+            gap: 20px;
+          }
+        
+          .nav-item .nav-link
+          { 
+            color: #333;
+            font-weight: 500;
+          }
+        
+          .btn-primary {
+            border-radius: 20px;
+            padding: 8px 16px;
+            }
+          footer {
+            color: #ffffff;            /* Color del texto */
+            text-align: center;        /* Centra el contenido */
+            padding: 15px;             /* Espaciado interno */
+            /* Si deseas que el footer se quede al final de la página: */
+            position: relative; /* o usa flexbox para layouts complejos */
+          }
+          main {
+            flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+          }
+
+        
+          .btn-compra {
+          padding: 15px 25px;
+          border: unset;
+          border-radius: 15px;
+          color: #212121;
+          z-index: 1;
+          background: #e8e8e8;
+          position: relative;
+          font-weight: 1000;
+          font-size: 17px;
+          -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+          box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+          transition: all 250ms;
+          overflow: hidden;
+        }
+
+        .btn-compra::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 0;
+          border-radius: 15px;
+          background-color: #212121;
+          z-index: -1;
+          -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+          box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+          transition: all 250ms;
+        }
+
+        .btn-compra:hover {
+          color: #e8e8e8;
+        }
+
+        .btn-compra:hover::before {
+          width: 100%;
+        }
