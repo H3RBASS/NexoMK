@@ -12,13 +12,55 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            margin: 0;
+        }
+        .carritoc-btn
+        {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #e7e7e7; /* morado */
+          padding: 10px;
+          border-radius: 15px; /* bordes redondeados pero no circulares */
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          z-index: 999; /* encima de todo */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+        .carritoc-btn img
+        {
+         width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 10px; 
+        }
+        .carritoc-btn:hover
+        {
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .carrito-total-fijo
+        {
+          bottom: 20px;
+          right: 20px;
+          background-color: #4B0082;
+          color: white;
+          padding: 8px 16px;
+          border-radius: 12px;
+          font-weight: bold;
+          z-index: 999;
+          font-size: 16px;
+          transition: transform 0.3s ease;
         }
         .card-body
         {
           justify-items: center;
           text-align: center;
         }
+       .descripcion
+       {
+        padding-left: 5%;
+        padding-top: 2%;
+       }
         .hero-section {
           display: flex;
           align-items: center;
@@ -143,3 +185,4 @@
         .btn-compra:hover::before {
           width: 100%;
         }
+        

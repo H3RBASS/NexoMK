@@ -40,12 +40,40 @@
 
 
         </section>
+        <!--3era tarjeta-->
+        <section class="hero-section container mt-4">
+          <div class="hero-text">
+            <h1 > Funcionalidades <span class="text-warning">Clave</span></h1>
+            <div class="descripcion">
+              <h5> ✓ Envío de mensajes a través de Whatsapp <br>
+                   ✓ Bots de respuesta automática <br>
+                   ✓ Creación y gestión de grupos <br>
+                   ✓ Verificación de números <br>
+                   ✓ Extracción de miembros de grupos
+                  </h5>
+            </div> 
+          </div>
+          <div class="hero-image-1">
+            <img src="https://www.jaguarcrm360.com/wp-content/uploads/2025/05/3333-2025-05-04-0815.png" alt="Ilustracion-uso-NexoMK">
+          </div>
+        </section>
         <!--2da tarjeta-->
         <section class="hero-section container mt-4">
-            <div class="hero-text">
-                <h1>Costo de Suscripciones: <span class="text-warning">NEXO MK</span></h1>
-                <div class="hero-buttons">
+          <div class="hero-text">
+                <h1>Costo de Suscripciones:
+                   <span class="text-warning">NEXO MK</span>
+                </h1>
+                <div 
+                  class="hero-buttons">
                 </div>
+                <!--tarjeta opciones precio-->
+               <select id="moneda" onchange="cambiarMoneda()" class="form-select w-auto">
+                  <option value="usd">USD ($)</option>
+                  <option value="bs">BOB (Bs)</option>
+                  <option value="mx">MEX ($)</option>
+                  <option value="eur">EUR (€)</option>
+                </select>
+
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -53,7 +81,7 @@
                     <!--img src="..." class="card-img-top" alt="..."-->
                     <div class="card-body">
                       <h5  class="card-title-1"><strong> PLAN <br> ALERTA </strong></h5>
-                      <h5 class="card-title"> US$ 10/mes</h5>
+                      <h5 class="card-title" data-usd="10"> US$ 10/mes</h5>
                       <p class="card-text">1 Mes <br> 2 usuarios <br> Todas las herramientas</p>
                       <button class="btn-compra">Añadir</button>
                     </div>
@@ -64,7 +92,7 @@
                     <!--img src="..." class="card-img-top" alt="..."-->
                     <div class="card-body">
                       <h5 class="card-title-1"> <strong> PLAN <br> INTERACCIÓN </strong></h5>
-                      <h5 class="card-title">US$ 45/mes</h5>
+                      <h5 class="card-title" data-usd="45">US$ 45/mes</h5>
                       <p class="card-text">6 Meses <br> 1 usuarios <br> Todas las herramientas</p>
                       <button class="btn-compra">Añadir</button>
                     </div>
@@ -75,7 +103,7 @@
                     <!--img src="..." class="card-img-top" alt="..."-->
                     <div class="card-body">
                       <h5 class="card-title-1"> <strong>PLAN <br> CONEXIÓN</strong></h5>
-                      <h5 class="card-title"> US$ 65/mes</h5>
+                      <h5 class="card-title" data-usd="65"> US$ 65/mes</h5>
                       <p class="card-text">1 Año <br> 1 Usuario <br> Todas las herramientas</p>
                       <button class="btn-compra">Añadir</button>
                     </div>
@@ -83,26 +111,14 @@
                 </div>
               </div>
         </section>
-        <!--3era tarjeta-->
-        <section class="hero-section container mt-4">
-          <div class="hero-text"> 
-            <h1> Funcionalidades Clave</h1>
-            <h5>Envío de mensajes a través de Whatsapp <br>
-                Bots de respuesta automática <br>
-                Creación y gestión de grupos <br>
-                Verificación de números <br>
-                Extracción de miembros de grupos
-            </h5>
-          </div>
-          <div class="hero-image-1">
-            <img src="https://www.jaguarcrm360.com/wp-content/uploads/2025/05/3333-2025-05-04-0815.png" alt="Ilustracion-uso-NexoMK">
-          </div>
-          <div>
-
-          </div>
-        </section>
-    </main>
+      </main>
+      <div class="carritoc-btn"> 
+        <img src='https://i.postimg.cc/d1sqX0C9/Pngtree-shopping-cart-convenient-icon-4637407.png' alt='img-carrito'/></a>
+        <span class="carrito-total" id="carrito-total">$0</span>
+      </div>
     <footer><p>&copy; 2025 NexoMK - Todos los derechos reservados.</p></footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
